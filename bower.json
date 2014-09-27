@@ -1,0 +1,12 @@
+{
+  "name": "xta-sut-angular",
+  "description": "XTA System Under Test for AngularJS",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "angular-route": "~1.2.x",
+    "angular-resource": "~1.2.x"
+  }
+}

@@ -1,0 +1,109 @@
+<div class="grid_6 books-content center clearfix" data-ng-repeat="img in phoneDetailCtrl.phone.images"
+     data-ng-if="phoneDetailCtrl.mainImageUrl == img">
+  <img id="main-mage" data-ng-src="/app-phonedata/{{ img }}">
+</div>
+
+<div class="grid_6 books-heading clearfix">
+  <h4 data-ng-bind="phoneDetailCtrl.phone.name"></h4>
+
+  <p data-ng-bind="phoneDetailCtrl.phone.description"></p>
+</div>
+
+<div class="grid_3 books-content clearfix">
+  <ul>
+    <li>
+      <span>Availability and Networks</span>
+      <ul>
+        <li>Availability: <span data-ng-repeat="availability in phoneDetailCtrl.phone.availability"
+                                data-ng-bind="availability"></span></li>
+      </ul>
+    </li>
+    <li>
+      <span>Battery</span>
+      <ul>
+        <li>Type: <span data-ng-bind="phoneDetailCtrl.phone.battery.type"></span></li>
+        <li>Talk Time: <span data-ng-bind="phoneDetailCtrl.phone.battery.talkTime"></span></li>
+        <li>Standby time (max): <span data-ng-bind="phoneDetailCtrl.phone.battery.standbyTime"></span></li>
+      </ul>
+    </li>
+    <li>
+      <span>Storage and Memory</span>
+      <ul>
+        <li>RAM: <span data-ng-bind="phoneDetailCtrl.phone.storage.ram"></span></li>
+        <li>Internal Storage: <span data-ng-bind="phoneDetailCtrl.phone.storage.flash"></span></li>
+      </ul>
+    </li>
+    <li>
+      <span>Connectivity</span>
+      <ul>
+        <li>Network Support: <span data-ng-bind="phoneDetailCtrl.phone.connectivity.cell"></span></li>
+        <li>WiFi: <span data-ng-bind="phoneDetailCtrl.phone.connectivity.wifi"></span></li>
+        <li>Bluetooth: <span data-ng-bind="phoneDetailCtrl.phone.connectivity.bluetooth"></span></li>
+        <li>Infrared: <span data-ng-bind="phoneDetailCtrl.phone.connectivity.infrared | xtaCheckmark"></span></li>
+        <li>GPS: <span data-ng-bind="phoneDetailCtrl.phone.connectivity.gps | xtaCheckmark"></span></li>
+      </ul>
+    </li>
+    <li>
+      <span>Android</span>
+      <ul>
+        <li>OS Version: <span data-ng-bind="phoneDetailCtrl.phone.android.os"></span></li>
+        <li>UI: <span data-ng-bind="phoneDetailCtrl.phone.android.ui"></span></li>
+      </ul>
+    </li>
+    <li>
+      <span>Size and Weight</span>
+      <ul>
+        <li>Dimensions: <span data-ng-repeat="dim in phoneDetailCtrl.phone.sizeAndWeight.dimensions"
+                              data-ng-bind="dim"></span></li>
+        <li>Weight: <span data-ng-bind="phoneDetailCtrl.phone.sizeAndWeight.weight"></span></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="grid_3 books-content clearfix">
+  <ul>
+    <li>
+      <span>Display</span>
+      <ul>
+        <li>Screen size: <span data-ng-bind="phoneDetailCtrl.phone.display.screenSize"></span></li>
+        <li>Screen resolution: <span data-ng-bind="phoneDetailCtrl.phone.display.screenResolution"></span>
+        <li>Touch screen: <span data-ng-bind="phoneDetailCtrl.phone.display.touchScreen | xtaCheckmark"></span></li>
+      </ul>
+    </li>
+    <li>
+      <span>Display</span>
+      <ul>
+        <li>Screen size: <span data-ng-bind="phoneDetailCtrl.phone.display.screenSize"></span></li>
+      </ul>
+    </li>
+    <li>
+      <span>Hardware</span>
+      <ul>
+        <li>CPU: <span data-ng-bind="phoneDetailCtrl.phone.hardware.cpu"></span></li>
+        <li>USB: <span data-ng-bind="phoneDetailCtrl.phone.hardware.usb"></span></li>
+        <li>Audio / headphone jack: <span data-ng-bind="phoneDetailCtrl.phone.hardware.audioJack"></span></li>
+        <li>FM Radio: <span data-ng-bind="phoneDetailCtrl.phone.hardware.fmRadio | xtaCheckmark"></span></li>
+        <li>Accelerometer: <span data-ng-bind="phoneDetailCtrl.phone.hardware.accelerometer | xtaCheckmark"></span></li>
+      </ul>
+    </li>
+    <li>
+      <span>Camera</span>
+      <ul>
+        <li>Primary: <span data-ng-bind="phoneDetailCtrl.phone.camera.primary"></span></li>
+        <li>Features: <span data-ng-bind="phoneDetailCtrl.phone.camera.features.join(', ')"></span></li>
+      </ul>
+    </li>
+    <li>
+      <span>Additional Features</span>
+      <span data-ng-bind="phoneDetailCtrl.phone.additionalFeatures"></span>
+    </li>
+  </ul>
+</div>
+
+
+<div class="grid_6 books-content center clearfix">
+  <span data-ng-repeat="img in phoneDetailCtrl.phone.images">
+    <img data-ng-src="/app-phonedata/{{ img }}" data-ng-click="phoneDetailCtrl.setImage(img)" width="150">
+  </span>
+</div>

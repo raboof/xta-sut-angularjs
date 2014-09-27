@@ -1,0 +1,27 @@
+<div class="grid_3 books-content center push_1">
+  <div class="search-form">
+    <input data-ng-model="query" style="display: inline-block;">
+  </div>
+</div>
+
+<div class="grid_6 books-heading clearfix">
+  <h4>Phones</h4>
+</div>
+
+<div class="grid_3 book-item clearfix"
+     data-ng-repeat="phone in phoneListCtrl.phones | filter:query | orderBy:phoneListCtrl.orderProp">
+  <img data-ng-src="/app-phonedata/{{ phone.imageUrl }}" alt="{{ phone.name }}">
+
+  <div class="book-content">
+    <h5 data-ng-bind="phone.name"></h5>
+    <h6 data-ng-bind="phone.snippet"></h6>
+    <a data-ng-href="#/phones/{{ phone.id }}" class="button button-green" title="Read more">Read more</a>
+
+    <div class="clearfix"></div>
+  </div>
+
+</div>
+
+<div class="grid_6 clearfix">
+  <hr>
+</div>
