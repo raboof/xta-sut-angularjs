@@ -1,10 +1,11 @@
 # XTA System Under Test AngularJS
 
+This project is based on the AngularJs Phone Catalong tutorial: https://github.com/angular/angular-phonecat
+
 ## Prerequisites
 
-### Git
-### Node.js and Tools
-
+- Git
+- Node.js and Tools
 
 ## Development
 
