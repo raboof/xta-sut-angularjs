@@ -34,7 +34,7 @@ it whenever you like.
 
 ### Running unit tests
 
-We recommend using [Jasmine][jasmine] and [Karma][karma] for your unit tests/specs, but you are free
+We recommend using Jasmine and Karma for your unit tests/specs, but you are free
 to use whatever works for you.
 
 - Start Karma with `npm test`
@@ -47,7 +47,7 @@ to use whatever works for you.
 
 ### End to end testing
 
-We recommend using [Jasmine][jasmine] and [Protractor][protractor] for end-to-end testing.
+We recommend using Jasmine and Protractor for end-to-end testing.
 
 Requires a webserver that serves the application. See Running the app during development, above.
 
