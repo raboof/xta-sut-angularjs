@@ -1,6 +1,6 @@
 # XTA System Under Test AngularJS
 
-This project is based on the AngularJs Phone Catalong tutorial: https://github.com/angular/angular-phonecat
+This project is based on the AngularJs Phone Catalog tutorial: https://github.com/angular/angular-phonecat
 
 ## Prerequisites
 
